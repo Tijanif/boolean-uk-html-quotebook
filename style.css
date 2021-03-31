@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto";
 }
 /* MAIN CONTAINER */
 .container {
@@ -36,11 +37,59 @@
 }
 
 .main-content .author-qoutes {
-  border: 1px solid black;
   grid-area: author-qoutes;
+  font-style: italic;
 }
 
 .main-content .musicians-qoutes {
-  border: 1px solid pink;
   grid-area: musicians;
+  font-style: italic;
+}
+
+/* MAIN CONTENT SECTION AUTHOR QOUTES */
+.author-qoutes h2 {
+  margin: 5px;
+}
+
+.author-qoutes .author-qoutes-figures {
+  margin: 10px;
+  background-color: #c8e6c8;
+  border-radius: 5px;
+}
+
+.author-qoutes .author-qoutes-figures p {
+  /* font: caption; */
+  line-height: 1.5;
+  margin: 5px;
+  text-align: center;
+}
+.author-qoutes .author-qoutes-figures figcaption {
+  margin: 5px;
+  text-align: right;
+}
+
+/* MAIN CONTENT SECTION MUSICIANS QOUTES */
+.musicians-qoutes h2 {
+  margin: 5px;
+}
+
+.musicians-qoutes .musicians-qoutes-figures {
+  margin: 2px;
+  background-color: #bddefb;
+  border-radius: 5px;
+}
+
+.musicians-qoutes .musicians-qoutes-figures p {
+  line-height: 1.5;
+  margin: 5px;
+  text-align: center;
+}
+
+.musicians-qoutes .musicians-qoutes-figures figcaption {
+  margin: 5px;
+  text-align: right;
+}
+
+.musicians-qoutes .musicians-qoutes-figures:nth-child(odd) {
+  background-color: #dbc0e4;
 }
