@@ -21,3 +21,26 @@
 .header h1 {
   color: #fff;
 }
+
+/* MAIN CONTENT */
+.main-content {
+  display: grid;
+  grid-gap: 5px;
+
+  margin: 10px;
+
+  grid-template:
+    ". author-qoutes ." 1fr
+    ". musicians . " 1fr /
+    1fr 2fr 1fr;
+}
+
+.main-content .author-qoutes {
+  border: 1px solid black;
+  grid-area: author-qoutes;
+}
+
+.main-content .musicians-qoutes {
+  border: 1px solid pink;
+  grid-area: musicians;
+}
